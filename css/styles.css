@@ -333,172 +333,108 @@ thead th {
 
 
 /* CSS Responsive */
-/* Para dispositivos con un ancho máximo de 768px (tablets y móviles) */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 100px; /* Reducir el ancho del sidebar */
-    }
-    .chart {
-        flex: 1 1 100%; /* Ocupan el 100% del ancho del contenedor en pantallas pequeñas */
-    }
-    .sidebar:hover {
-        width: 110px; /* Ajustar el ancho al hacer hover */
-    }
-
-    .sidebar .icon a {
-        font-size: 14px; /* Reducir el tamaño de la fuente */
-        padding: 8px 12px;
-    }
-    #sidebar-toggle-btn {
-        left: 10px; /* Ajustar la posición del botón para pantallas pequeñas */
-    }
-    .content {
-        margin-left: 100px; /* Ajustar el margen izquierdo */
-    }
-
-    .satellite-image {
-        flex: 1;
-        max-height: 400px; /* Reducir la altura máxima */
-    }
-    
-    .data-grid {
-        flex: 1;
-        max-height: 600px; /* Reducir la altura máxima */
-    }
-
-    .top-content {
-        flex-direction: column; /* Cambiar la dirección a columna */
-    }
-
-    .fila-graficos {
-        flex-direction: column; /* Cambiar la dirección a columna */
-        align-items: center;
-    }
-
-    .chart {
-        margin-bottom: 20px; /* Añadir margen inferior */
-    }
-
-    .info-area {
-        margin: 10px;
-        padding: 15px;
-    }
-
-    .tablink {
-        font-size: 14px;
-        padding: 10px 12px;
-    }
-}
 
 /* Para dispositivos con un ancho máximo de 480px (móviles) */
 @media (max-width: 480px) {
     .sidebar {
-        width: 80px; /* Reducir más el ancho del sidebar */
+        width: 80px;
     }
-
     .sidebar:hover {
-        width: 90px; /* Ajustar el ancho al hacer hover */
+        width: 90px;
     }
-
     .sidebar .icon a {
-        font-size: 12px; /* Reducir más el tamaño de la fuente */
+        font-size: 12px;
         padding: 6px 8px;
     }
     #sidebar-toggle-btn {
-        left: 5px; /* Ajustar más la posición del botón para pantallas muy pequeñas */
-        width: 35px; /* Reducir el tamaño del botón */
-        height: 35px; /* Reducir el tamaño del botón */
-        font-size: 20px; /* Reducir el tamaño de la fuente */
+        left: 5px;
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
     }
     .content {
-        margin-left: 80px; /* Ajustar el margen izquierdo */
+        margin-left: 80px;
     }
-
     .satellite-image,
     .data-grid {
         flex: 1;
-        max-height: 600px; /* Reducir más la altura máxima */
+        max-height: 600px;
     }
-
     .top-content {
-        flex-direction: column; /* Cambiar la dirección a columna */
+        flex-direction: column;
     }
-
     .chart {
-        margin-bottom: 15px; /* Reducir el margen inferior */
+        margin-bottom: 15px;
     }
     .fila-graficos {
-        flex-direction: column; /* Cambiar la dirección a columna */
+        flex-direction: column;
         align-items: center;
     }
-
-
     .tablink {
         font-size: 12px;
         padding: 8px 10px;
     }
-
     h2 {
-        font-size: 18px; /* Reducir el tamaño de la fuente */
+        font-size: 18px;
     }
-
     p {
-        font-size: 14px; /* Reducir el tamaño de la fuente */
+        font-size: 14px;
     }
-
     table {
-        font-size: 8px; /* Reducir el tamaño de la fuente */
+        font-size: 8px;
     }
-
     .info-area p:before {
-        font-size: 18px; /* Reducir el tamaño del ícono */
+        font-size: 18px;
     }
 }
 
-/* Para dispositivos con un ancho mínimo de 769px y máximo de 1024px (tablets en modo horizontal, pantallas medianas) */
-@media (min-width: 769px) and (max-width: 1024px) {
+/* Para dispositivos con un ancho entre 481px y 768px (tablets y móviles en modo horizontal) */
+@media (min-width: 481px) and (max-width: 768px) {
     .sidebar {
-        width: 120px;
-    }
-    .sidebar:hover {
-        width: 130px;
-    }
-    .sidebar .icon a {
-        font-size: 16px;
-        padding: 10px 14px;
-    }
-    #sidebar-toggle-btn {
-        left: 20px;
-        font-size: 24px;
-    }
-    .content {
-        margin-left: 120px;
-    }
-    .satellite-image,
-    .data-grid {
-        max-height: 500px;
+        width: 100px;
     }
     .chart {
-        margin-bottom: 25px;
+        flex: 1 1 100%;
     }
-    .tablink {
-        font-size: 16px;
-        padding: 12px 14px;
+    .sidebar:hover {
+        width: 110px;
     }
-    h2 {
-        font-size: 20px;
+    .sidebar .icon a {
+        font-size: 14px;
+        padding: 8px 12px;
     }
-    p {
-        font-size: 16px;
+    #sidebar-toggle-btn {
+        left: 10px;
     }
-    table {
-        font-size: 10px;
+    .content {
+        margin-left: 100px;
+    }
+    .satellite-image {
+        flex: 1;
+        max-height: 400px;
+    }
+    .data-grid {
+        flex: 1;
+        max-height: 600px;
+    }
+    .top-content {
+        flex-direction: column;
     }
     .fila-graficos {
-        flex-direction: column; /* Cambiar la dirección a columna */
+        flex-direction: column;
         align-items: center;
     }
-
+    .chart {
+        margin-bottom: 20px;
+    }
+    .info-area {
+        margin: 10px;
+        padding: 15px;
+    }
+    .tablink {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
 }
 
 /* Para dispositivos con un ancho mínimo de 1025px y máximo de 1366px (pantallas grandes, laptops) */
@@ -541,100 +477,7 @@ thead th {
         font-size: 12px;
     }
     .fila-graficos {
-        flex-direction: column; /* Cambiar la dirección a columna */
-        align-items: center;
+        flex-direction: row; /* Mantener en fila en pantallas más grandes */
+        justify-content: space-between;
     }
-
-}
-
-/* Para dispositivos con un ancho mínimo de 1367px y máximo de 1920px (pantallas Full HD) */
-@media (min-width: 1367px) and (max-width: 1920px) {
-    .sidebar {
-        width: 160px;
-    }
-    .sidebar:hover {
-        width: 180px;
-    }
-    .sidebar .icon a {
-        font-size: 20px;
-        padding: 14px 18px;
-    }
-    #sidebar-toggle-btn {
-        left: 40px;
-        font-size: 28px;
-    }
-    .content {
-        margin-left: 160px;
-    }
-    .satellite-image,
-    .data-grid {
-        max-height: 700px;
-    }
-    .chart {
-        margin-bottom: 35px;
-    }
-    .tablink {
-        font-size: 20px;
-        padding: 16px 18px;
-    }
-    h2 {
-        font-size: 24px;
-    }
-    p {
-        font-size: 20px;
-    }
-    table {
-        font-size: 14px;
-    }
-    .fila-graficos {
-        flex-direction: column; /* Cambiar la dirección a columna */
-        align-items: center;
-    }
-
-}
-
-/* Para dispositivos con un ancho mínimo de 1921px (pantallas muy grandes, Ultra HD y superiores) */
-@media (min-width: 1921px) {
-    .sidebar {
-        width: 200px;
-    }
-    .sidebar:hover {
-        width: 220px;
-    }
-    .sidebar .icon a {
-        font-size: 24px;
-        padding: 16px 20px;
-    }
-    #sidebar-toggle-btn {
-        left: 50px;
-        font-size: 32px;
-    }
-    .content {
-        margin-left: 200px;
-    }
-    .satellite-image,
-    .data-grid {
-        max-height: 800px;
-    }
-    .chart {
-        margin-bottom: 40px;
-    }
-    .tablink {
-        font-size: 22px;
-        padding: 18px 20px;
-    }
-    h2 {
-        font-size: 28px;
-    }
-    p {
-        font-size: 22px;
-    }
-    table {
-        font-size: 16px;
-    }
-    .fila-graficos {
-        flex-direction: column; /* Cambiar la dirección a columna */
-        align-items: center;
-    }
-
 }
